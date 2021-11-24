@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 14px;
+  font-family: "Press Start 2P", cursive;
 }
 body {
   box-sizing: border-box;
@@ -39,9 +40,9 @@ header h2 span {
 /* main */
 main {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   text-align: center;
   flex-wrap: wrap;
   min-width: 500px;
@@ -100,9 +101,11 @@ main div {
   transition: 0.5s;
   padding: 20px 0px 20px 20px;
   cursor: pointer;
+  user-select: none;
 }
-#trait ul li .qst {
+#trait ul li .res {
   margin-left: 20px;
+  font-size: 1.5rem;
 }
 
 #trait ul li:hover {
@@ -378,4 +381,19 @@ footer {
   background-color: black;
   padding: 20px 40px;
   letter-spacing: 2px;
+}
+/* qsts */
+.qsts-container .qa {
+  display: none;
+}
+.qsts-container .qa.active {
+  display: block;
+}
+#form-name {
+  display: none;
+}
+#result {
+  display: none;
+  color: white;
+  font-size: 3rem;
 }

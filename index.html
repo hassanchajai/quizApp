@@ -18,7 +18,7 @@
     <header>
       <!-- name -->
       <div></div>
-      <button><i class="fas fa-door-closed"></i></button>
+      <!-- <button><i class="fas fa-door-closed"></i></button> -->
       <!-- <nav></nav> -->
     </header>
     <!-- end of header -->
@@ -41,28 +41,14 @@
         <hr />
         <!-- end of toolbar -->
         <!-- questions -->
-        <h2>Question ?</h2>
-        <ul>
-          <li class="active">
-            <div class="circle">
-              <div class="selected"></div>
-            </div>
-            <div class="qst">Response 1</div>
-          </li>
-          <li>
-            <div class="circle">
-              <div class="selected"></div>
-            </div>
-            <div class="qst">Response 1</div>
-          </li>
-          <li>
-            <div class="circle">
-              <div class="selected"></div>
-            </div>
-            <div class="qst">Response 1</div>
-          </li>
-        </ul>
+        <div class="qsts-container"></div>
       </div>
+
+      <form id="form-name">
+        <h2>Result</h2>
+        <input type="text" name="name" />
+      </form>
+      <div id="result"></div>
       <!-- leaderBoard -->
       <div id="lead">
         <h1>
@@ -74,13 +60,13 @@
           </div>
           <h4>1 - Name</h4>
         </div>
-        
-          <ul>
-            <li>
-              <img src="pac.png"  height="30" width="30" alt="image" />   <h3> 2 - Name</h3> 
-            </li>
-          </ul>
-        
+
+        <ul>
+          <li>
+            <img src="pac.png" height="30" width="30" alt="image" />
+            <h3>2 - Name</h3>
+          </li>
+        </ul>
       </div>
     </main>
     <!-- end of body content -->
